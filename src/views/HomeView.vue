@@ -1,18 +1,23 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ListTasks v-if="$store.state.tasks.length" />
+    <NoTasks v-else />
+    <FinishSortingButton v-if="$store.state.sort" />
   </div>
 </template>
-
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
-
+import AddTaskInput from '@/components/Todo/AddTaskInput.vue';
+import ListTasks from '@/components/Todo/ListTasks.vue';
+import NoTasks from '@/components/Todo/NoTasks.vue';
+import FinishSortingButton from '@/components/Todo/FinishSortingButton.vue';
 export default {
-  name: 'HomeView',
+  name: 'Home',
+
   components: {
-    HelloWorld
-  }
-}
+    AddTaskInput,
+    ListTasks,
+    NoTasks,
+    FinishSortingButton,
+  },
+};
 </script>
