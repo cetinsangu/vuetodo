@@ -1,41 +1,19 @@
 <template>
-  <div class="about pa-6">
+  <div class="about pa-6 justify-center d-flex flex-column align-center mt-3">
     <h1>About {{ $store.state.appTitle }}</h1>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam pariatur
-      delectus soluta iste dicta. Non maiores iusto excepturi voluptatibus
-      minus, aliquam, autem, hic aut sapiente explicabo magnam nostrum ratione
-      molestiae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
-      dolores natus minus eligendi excepturi aspernatur fuga magni sit pariatur
-      numquam eveniet quisquam repudiandae dicta maiores optio libero inventore.
-      Architecto, officia?
+    <p class="mt-2">
+      I made this app for educational purposes. Not for anything else.
     </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam pariatur
-      delectus soluta iste dicta. Non maiores iusto excepturi voluptatibus
-      minus, aliquam, autem, hic aut sapiente explicabo magnam nostrum ratione
-      molestiae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
-      dolores natus minus eligendi excepturi aspernatur fuga magni sit pariatur
-      numquam eveniet quisquam repudiandae dicta maiores optio libero inventore.
-      Architecto, officia?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam pariatur
-      delectus soluta iste dicta. Non maiores iusto excepturi voluptatibus
-      minus, aliquam, autem, hic aut sapiente explicabo magnam nostrum ratione
-      molestiae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
-      dolores natus minus eligendi excepturi aspernatur fuga magni sit pariatur
-      numquam eveniet quisquam repudiandae dicta maiores optio libero inventore.
-      Architecto, officia?
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam pariatur
-      delectus soluta iste dicta. Non maiores iusto excepturi voluptatibus
-      minus, aliquam, autem, hic aut sapiente explicabo magnam nostrum ratione
-      molestiae! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel,
-      dolores natus minus eligendi excepturi aspernatur fuga magni sit pariatur
-      numquam eveniet quisquam repudiandae dicta maiores optio libero inventore.
-      Architecto, officia?
-    </p>
+    <a
+      class="link-s text-h4"
+      href="https://github.com/cetinsangu"
+      target="_blank"
+      >My Github</a
+    >
   </div>
 </template>
+
+<style lang="sass" scoped>
+.link-s
+  text-decoration: none
+</style>

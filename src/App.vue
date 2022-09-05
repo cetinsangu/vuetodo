@@ -40,7 +40,6 @@
       app
       color="primary"
       dark
-      shrink-on-scroll
       src="todoheaderimg.jpg"
       :height="$route.path === '/' ? '240' : '180'"
     >
@@ -57,9 +56,7 @@
           <SearchBar />
         </v-row>
         <v-row>
-          <v-app-bar-title class="ml-4 text-h4">{{
-            $store.state.appTitle
-          }}</v-app-bar-title>
+          <div class="ml-4 text-h4">{{ $store.state.appTitle }}</div>
         </v-row>
         <v-row><LiveDateHeader /></v-row>
 
