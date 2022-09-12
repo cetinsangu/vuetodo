@@ -1,4 +1,4 @@
-# my-vuetify-todo-app
+# VueToDo
 
 ## Project setup
 ```
